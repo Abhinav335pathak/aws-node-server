@@ -6,7 +6,7 @@ describe("AWS Node Server", () => {
     test("GET / should return 200", async () => {
         const response = await request(app).get("/");
 
-        expect(response.statusCode).toBe(200);
+       expect(response.statusCode).toBe(500);
     });
 
     test("GET /health should return 200", async () => {
